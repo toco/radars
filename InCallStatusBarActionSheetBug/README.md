@@ -1,4 +1,4 @@
-19357857 - UIAlertController action sheet style: dimming view doesn't resize when in class status bar hides
+19357857 - UIAlertController action sheet style: dimming view doesn't resize when in call status bar hides
 =========================================================
 
 rdar://19357857
