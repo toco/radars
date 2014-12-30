@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="InCallStatusBarActionSheetBug" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27X-Zs-3zS">
+                                <rect key="frame" x="175" y="285" width="251" height="30"/>
+                                <state key="normal" title="2. click this button showActionSheet">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showActionSheet" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cbc-FT-LRl"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xi3-B5-L7u">
+                                <rect key="frame" x="154" y="236" width="295" height="41"/>
+                                <string key="text">1. Show In-Call Status Bar
+⌘Y (Simulator) or call yourself (iPhone)</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N03-57-6tq">
+                                <rect key="frame" x="107" y="323" width="388" height="41"/>
+                                <string key="text">3. Hide In-Call Status Bar
+⌘Y (Simulator) or hang up on other phone (iPhone)</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a93-wO-mMc">
+                                <rect key="frame" x="107" y="372" width="388" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="83O-du-WHw"/>
+                                </constraints>
+                                <string key="text">Result:
+The dimming view doesn't resize correctly.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="a93-wO-mMc" firstAttribute="trailing" secondItem="N03-57-6tq" secondAttribute="trailing" id="47K-Oa-Jwi"/>
+                            <constraint firstItem="a93-wO-mMc" firstAttribute="centerX" secondItem="N03-57-6tq" secondAttribute="centerX" id="Qn9-tc-qoR"/>
+                            <constraint firstItem="N03-57-6tq" firstAttribute="centerX" secondItem="27X-Zs-3zS" secondAttribute="centerX" id="Yjq-8W-4v2"/>
+                            <constraint firstItem="27X-Zs-3zS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gSo-Yq-ua4"/>
+                            <constraint firstItem="N03-57-6tq" firstAttribute="centerX" secondItem="xi3-B5-L7u" secondAttribute="centerX" id="nIP-Jc-3Ma"/>
+                            <constraint firstItem="27X-Zs-3zS" firstAttribute="top" secondItem="xi3-B5-L7u" secondAttribute="bottom" constant="8" symbolic="YES" id="v0t-OD-YHQ"/>
+                            <constraint firstItem="27X-Zs-3zS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vnx-VL-O3o"/>
+                            <constraint firstItem="N03-57-6tq" firstAttribute="top" secondItem="27X-Zs-3zS" secondAttribute="bottom" constant="8" symbolic="YES" id="wTY-dC-adu"/>
+                            <constraint firstItem="a93-wO-mMc" firstAttribute="top" secondItem="N03-57-6tq" secondAttribute="bottom" constant="8" symbolic="YES" id="yb2-h3-r2E"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
