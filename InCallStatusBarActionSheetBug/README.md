@@ -3,3 +3,5 @@
 
 rdar://19357857
 http://openradar.appspot.com/19357857
+
+![Screenshot](https://raw.githubusercontent.com/toco/radars/master/InCallStatusBarActionSheetBug/IMG_5480.PNG)
