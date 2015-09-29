@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "Force RTL"; ObjectID = "4wA-Bx-Wm6"; */
+"4wA-Bx-Wm6.text" = "Force RTL";
+
+/* Class = "UILabel"; text = "Force LTR"; ObjectID = "CqW-H7-xyc"; */
+"CqW-H7-xyc.text" = "Force LTR";
+
+/* Class = "UILabel"; text = "Spatial"; ObjectID = "X6u-oP-pAG"; */
+"X6u-oP-pAG.text" = "Spatial";
+
+/* Class = "UILabel"; text = "Unspecified"; ObjectID = "f7o-V3-gjA"; */
+"f7o-V3-gjA.text" = "Unspecified";
+
+/* Class = "UILabel"; text = "Playback"; ObjectID = "rGQ-W0-BrI"; */
+"rGQ-W0-BrI.text" = "Playback";
